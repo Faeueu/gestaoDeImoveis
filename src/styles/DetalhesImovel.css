@@ -1,0 +1,121 @@
+.detalhe-imovel {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .icon {
+    font-size: 16px;
+    cursor: pointer;
+    color: #444;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.header .status{
+    color: #444;
+}
+
+
+.verify-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.imovel-info,
+.proprietario,
+.corretor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.imovel-info div {
+    flex: 1;
+}
+
+p {
+    font-size: 14px;
+    color: #222;
+    margin: 4px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Ajustes Específicos */
+h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #28a745;
+    margin: 5px 0 10px;
+}
+
+.imovel-info {
+    gap: 20px;
+}
