@@ -39,7 +39,6 @@ const DetalhesImovel = () => {
       <div className="content">
         {/* Dados do Imóvel */}
         <section className="dados-imovel">
-          <h2>Dados do Imóvel</h2>
           <div className="imovel-info">
             <div>
               <p>
@@ -68,7 +67,7 @@ const DetalhesImovel = () => {
 
         {/* Dados do Proprietário */}
         <section className="proprietario">
-          <h2>Proprietário</h2>
+          <h2>Proprietário:</h2>
           <p>
             <strong>Nome:</strong> {owner.name}
           </p>
@@ -79,7 +78,7 @@ const DetalhesImovel = () => {
 
         {/* Dados do Corretor */}
         <section className="corretor">
-          <h2>Corretor</h2>
+          <h2>Corretor:</h2>
           <p>
             <strong>Nome:</strong> {realtor.name}
           </p>

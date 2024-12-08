@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState} from "react";
 import "../styles/DetalhesComprador.css";
+import verifyIcon from "../assets/images/Verify.png";
+import { useNavigate } from "react-router-dom";
 
 const DetalhesComprador = () => {
+
+  const navigate = useNavigate();
+
+  const handleConcluirVenda = () => {
+    navigate("/comprar"); 
+  };
+
+  const [showMessage, setShowMessage] = useState(false);
+
+  const handleCadastrar = () => {
+    setShowMessage(true);
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 3000); // Esconde a mensagem após 3 segundos
+  };
+
   return (
     <div className="detalhes-comprador">
       {/* Cabeçalho */}
       <div className="header">
-        <span className="icon">← Imóvel</span>
-        <h1>À VENDA</h1>
+        <h1>Dados do Comprador</h1>
+        <div className="status">
+          <img src={verifyIcon} alt="Verificado" className="verify-icon" />
+          <span>À VENDA</span>
+        </div>
       </div>
 
       {/* Dados do Imóvel */}
@@ -73,7 +94,18 @@ const DetalhesComprador = () => {
       </div>
 
       {/* Botão Vender */}
-      <button className="btn btn-vender">Vender</button>
+      <div className="action">
+          <button className="btn-primary" onClick={handleConcluirVenda}>
+            Finalizar Compra
+          </button>
+        </div>
+
+        {showMessage && (
+          <div className="confirmation-message">
+            Venda finalizada!
+          </div>
+        )}
+
     </div>
   );
 };

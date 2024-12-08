@@ -17,14 +17,6 @@ const Navbar = () => {
         <li><Link to="/vender">Vender</Link></li>
         <li><Link to="/alugar">Alugar</Link></li>
         <li><Link to="/corretores">Corretores</Link></li>
-        <li className="dropdown">
-          Cadastros
-          <ul className="dropdown-menu">
-            <li><Link to="/cadastro-cliente">Cliente</Link></li>
-            <li><Link to="/cadastro-proprietario">Proprietário</Link></li>
-            <li><Link to="/cadastro-corretor">Corretor</Link></li>
-          </ul>
-        </li>
       </ul>
       <div className="user-icon">
         <Link to="/cadastro-cliente">

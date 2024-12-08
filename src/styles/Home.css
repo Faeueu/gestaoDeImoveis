@@ -9,7 +9,8 @@
   background-image: url('../assets/images/Background.png');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,36 +21,38 @@
 
 .hero h1 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin:0;
   color: white;
 }
 
 .search-bar {
   display: flex;
+  margin: 30px;
   justify-content: center;
   align-items: center;
 }
 
 .search-bar input {
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
-  border-radius: 20px 0 0 20px;
-  width: 450px;
+  border-radius: 30px 30px 30px 30px;
+  width: 500px;
   outline: none;
 }
 
 .search-bar button {
   padding: 1rem;
   border: none;
+  margin-left: 10px;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
   background-color: #333;
   color: white;
-  border-radius: 0 20px 20px 0;
-  cursor: pointer;
 }
 
 .search-bar button img {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .search-bar button:hover {
@@ -58,23 +61,25 @@
 
 /* Properties Section */
 .properties {
-  padding: 100px;
+  padding: 90px;
   background-color: #f9f9f9;
+  margin:0 auto;
+  padding: 2rem 20rem;
 }
 
 .property-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid #000000;
   border-radius: 10px;
   background-color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .property-info p {
-  margin: 0.5rem 0;
+  margin: auto;
 }
 
 .property-actions {
@@ -84,7 +89,8 @@
 }
 
 .butn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
+  height: 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
