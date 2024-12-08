@@ -1,89 +1,101 @@
-.cadastro-imovel {
-  max-width: 800px;
-  margin: 0 auto;
-  /* Centraliza a página */
-  padding: 20px;
+/* Estilo geral */
+.container {
   font-family: Arial, sans-serif;
   background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cadastro-imovel h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
+.headerCi {
   text-align: center;
-  color: #000;
+  margin-bottom: 20px;
 }
 
-.cadastro-imovel h3 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #000;
+.headerCi h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  margin: auto;
+  padding: 2rem;
 }
 
-.cadastro-imovel form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.form-container {
+  text-align: center;
 }
 
-.cadastro-imovel input[type="text"],
-.cadastro-imovel input[type="email"],
-.cadastro-imovel input[type="number"],
-.cadastro-imovel input[type="date"] {
+form {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  font-size: 14px;
 }
 
-.cadastro-imovel div {
+section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #444;
+}
+
+.form-group {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
 }
 
-.cadastro-imovel div input {
+input {
   flex: 1;
-  /* Faz os campos dentro de divs terem o mesmo tamanho */
+  min-width: 220px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
-.buttonCadastro button{
-  button {
-      background-color: #333;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-  
-    button:hover {
-      background-color: #000;
-    }
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  background-color: #f9f9f9;
 }
 
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
 
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-submit {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
 
 .confirmation-message {
   margin-top: 20px;
-  padding: 10px;
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* Ajuste para dispositivos móveis */
-@media (max-width: 600px) {
-  .cadastro-imovel div {
-    flex-direction: column;
-  }
+  color: #28a745;
+  font-size: 16px;
+  font-weight: bold;
 }
