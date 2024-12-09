@@ -1,0 +1,51 @@
+.visualizar-clientes {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .clientes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cliente-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .cliente-card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .cliente-card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .cliente-detalhes {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .cliente-detalhes p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  

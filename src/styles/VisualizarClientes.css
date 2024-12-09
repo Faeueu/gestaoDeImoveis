@@ -1,0 +1,52 @@
+/* VisualizarClientes.css */
+.visualizar-clientes {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between; /* Alinha o botão e o título nas extremidades */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0; /* Remove a margem para um alinhamento preciso */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clientes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cliente-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer; /* Adiciona um cursor pointer para indicar interatividade */
+}
+
+.cliente-card:hover {
+    background-color: #f0f0f0;
+}
+
+.cliente-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}

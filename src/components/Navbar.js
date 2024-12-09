@@ -1,3 +1,4 @@
+// Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -16,7 +17,14 @@ const Navbar = () => {
         <li><Link to="/comprar">Comprar</Link></li>
         <li><Link to="/vender">Vender</Link></li>
         <li><Link to="/alugar">Alugar</Link></li>
-        <li><Link to="/corretores">Corretores</Link></li>
+        <li className="dropdown">
+          Visualizar
+          <ul className="dropdown-menu">
+            <li><Link to="/visualizar-clientes">Clientes</Link></li>
+            <li><Link to="/visualizar-proprietarios">Proprietários</Link></li>
+            <li><Link to="/visualizar-corretores">Corretores</Link></li>
+          </ul>
+        </li>
         <li className="dropdown">
           Cadastros
           <ul className="dropdown-menu">
@@ -26,11 +34,12 @@ const Navbar = () => {
           </ul>
         </li>
       </ul>
+
       <div className="user-icon">
-        <Link to="/cadastro-cliente">
-        <img src={user} alt="Usuário" />
+        <Link to="/visualizar-clientes">
+          <img src={user} alt="Usuário" />
         </Link>
-      </div>
+      </div>      
     </nav>
   );
 };
