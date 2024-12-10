@@ -1,1 +1,30 @@
-{}
+{
+  "clientes": [
+    {
+      "id": "b382",
+      "nome": "asa",
+      "email": "sa@gmail.com",
+      "dataNascimento": "2024-12-04",
+      "contato": "sss",
+      "endereco": {
+        "pais": "ss",
+        "estado": "s",
+        "cidade": ""
+      }
+    },
+    {
+      "id": "dbf2",
+      "nome": "alex",
+      "email": "sa@gmail.com",
+      "dataNascimento": "2024-12-04",
+      "contato": "sss",
+      "endereco": {
+        "pais": "ss",
+        "estado": "s",
+        "cidade": ""
+      }
+    }
+  ],
+  "venda": [],
+  "aluguel": []
+}
