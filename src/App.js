@@ -9,6 +9,8 @@ import DetalheComprador from "./pages/DetalheComprador";
 import VisualizarClientes from "./pages/VisualizarClientes";
 import DetalhesCliente from "./pages/DetalhesCliente";
 import CadastroCliente from "./pages/CadastroCliente";
+import VisualizarCorretores from "./pages/DetalhesCorretor";
+import CadastroCorretor from "./pages/CadastroCorretores";
 
 
 const App = () => {
@@ -21,6 +23,9 @@ const App = () => {
         <Route path="/vender" element={<CadastroImovelVenda />} /> 
         <Route path="/alugar" element={<CadastroImovelAluguel />} />
         <Route path="/corretores" element={<div>Corretores Page</div>} />
+        <Route path="/cadastrar-corretores" element={<CadastroCorretor />} />
+        <Route path="/visualizar-corretores" element={<VisualizarCorretores/>} />
+        <Route path="/cadastro-cliente" element={<CadastroCliente />} />
         <Route path="/detalhes-imovel" element={<DetalhesImovel />} />
         <Route path="/detalhes-comprador" element={<DetalheComprador />} />
         <Route path="/visualizar-clientes" element={<VisualizarClientes />} />

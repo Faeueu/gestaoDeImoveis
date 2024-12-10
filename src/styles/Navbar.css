@@ -1,3 +1,4 @@
+/* Estilos gerais da barra de navegação */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -7,38 +8,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para o logo */
 .logo img {
   height: 40px;
   cursor: pointer;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  font-size: 20px;
-  font-style: initial;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease; /* Suavidade ao interagir */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.3s ease;
-  font-size: x-large;
-}
-
-.nav-links li:hover {
-  color: #007BFF; /* Cor ao passar o mouse */
-  transform: scale(1.1); /* Leve aumento no hover */
-}
-
-.nav-links a:hover {
-  color: #007BFF;
 }
 
 .user-icon img {
@@ -46,43 +19,75 @@
   cursor: pointer;
 }
 
-.nav-links .dropdown {
-  cursor: pointer;
-  transition: transform 0.3s ease; /* Suavidade ao interagir */
+/* Estilos para os links principais */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-links .dropdown:hover {
-  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+.nav-links li {
+  font-size: 23px; /* Tamanho de fonte uniforme */
+  font-family: Arial, sans-serif; /* Fonte consistente */
+  position: relative;
+  padding: 5px 15px; /* Espaçamento uniforme */
+  margin: 0; /* Remove margens inconsistentes */
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 23px; /* Fonte alinhada com o dropdown */
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover,
+.nav-links a:hover {
+  color: #007BFF; /* Cor ao passar o mouse */
+  transform: scale(1.1); /* Leve aumento no hover */
+}
+
+/* Estilos para o dropdown */
+.nav-links .dropdown {
+  position: relative;
+  cursor: pointer;
 }
 
 .nav-links .dropdown-menu {
-  display: none;
+  display: none; /* Inicialmente oculto */
   position: absolute;
-  top: 100%;
+  top: 100%; /* Abaixo do item do menu principal */
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;
   list-style: none;
-  padding: 10px 0;
+  padding: 0; /* Remove padding extra */
+  margin: 0; /* Remove margens desnecessárias */
   min-width: 150px;
   z-index: 10;
-  opacity: 0; /* Inicialmente oculto */
+  opacity: 0; /* Invisível inicialmente */
   visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Animação ao exibir */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(-10px); /* Efeito de subida */
 }
 
 .nav-links .dropdown:hover .dropdown-menu {
-  display: block;
-  opacity: 1; /* Torna visível */
+  display: block; /* Torna o dropdown visível */
+  opacity: 1;
   visibility: visible;
   transform: translateY(0); /* Movimento suave para baixo */
 }
 
 .nav-links .dropdown-menu li {
-  padding: 5px 15px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Suavidade ao interagir */
+  padding: 5px 15px; /* Espaçamento consistente */
+  font-size: 16px; /* Tamanho uniforme */
+  font-family: Arial, sans-serif;
+  text-align: left; /* Alinha o texto à esquerda */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links .dropdown-menu li a {
@@ -91,6 +96,6 @@
 }
 
 .nav-links .dropdown-menu li:hover {
-  background-color: #f0f0f0; /* Destaque ao hover */
+  background-color: #f0f0f0; /* Cor ao passar o mouse */
   transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }

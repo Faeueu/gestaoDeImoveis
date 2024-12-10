@@ -1,1 +1,23 @@
-{}
+
+{
+  "corretores": [
+    {
+      "id": "bfb2",
+      "nome": "Lamarl",
+      "creci": "123243",
+      "telefone": "089218921",
+      "pais": "baosaiop",
+      "estado": "aoksoap",
+      "cidade": "aksaolsa"
+    },
+    {
+      "id": "8f4b",
+      "nome": "Hebert",
+      "creci": "123456",
+      "telefone": "739380291",
+      "pais": "kajoskjaoia",
+      "estado": "pakoskodpsa",
+      "cidade": "kpoksoapkpso"
+    }
+  ]
+}
