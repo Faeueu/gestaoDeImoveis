@@ -44,15 +44,6 @@ const VisualizarCorretores = () => {
         />
       </div>
 
-      <div className="actions">
-        <button
-          className="button-secondary"
-          onClick={() => navigate("/cadastrar-corretores")}
-        >
-          + Cadastrar Corretores
-        </button>
-      </div>
-
       <div className="corretores-lista">
         {corretoresFiltrados.length > 0 ? (
           corretoresFiltrados.map((corretor) => (
@@ -77,6 +68,15 @@ const VisualizarCorretores = () => {
         ) : (
           <p className="no-data">Nenhum corretor encontrado.</p>
         )}
+      </div>
+
+      <div className="actions">
+        <button
+          className="button-secondary"
+          onClick={() => navigate("/cadastrar-corretores")}
+        >
+          Cadastrar Corretores
+        </button>
       </div>
     </div>
   );

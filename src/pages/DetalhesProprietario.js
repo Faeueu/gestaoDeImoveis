@@ -82,20 +82,16 @@ const DetalhesProprietarios = () => {
         {/* Seção de Endereço */}
         <div className="endereco">
           <div>
-            <label>Rua:</label>
-            <input type="text" value={proprietario.endereco.rua} readOnly />
+            <label>Pais:</label>
+            <input type="text" value={proprietario.localizacao.pais} readOnly />
           </div>
           <div>
             <label>Cidade:</label>
-            <input type="text" value={proprietario.endereco.cidade} readOnly />
+            <input type="text" value={proprietario.localizacao.cidade} readOnly />
           </div>
           <div>
             <label>Estado:</label>
-            <input type="text" value={proprietario.endereco.estado} readOnly />
-          </div>
-          <div>
-            <label>CEP:</label>
-            <input type="text" value={proprietario.endereco.cep} readOnly />
+            <input type="text" value={proprietario.localizacao.estado} readOnly />
           </div>
         </div>
       </div>
