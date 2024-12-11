@@ -34,7 +34,7 @@ const DetalhesProprietarios = () => {
   }
 
   return (
-    <div className="visualizar-clientes">
+    <div className="visualizar-proprietarios">
       {/* Cabeçalho */}
       <header className="header">
         <button className="back-button" onClick={handleVoltar}>
@@ -44,7 +44,7 @@ const DetalhesProprietarios = () => {
       </header>
 
       {/* Seção de Detalhes */}
-      <div className="cliente-detalhes">
+      <div className="proprietarios-detalhes">
         <div className="dados">
           <label>Nome:</label>
           <input type="text" value={proprietario.nome} readOnly />
@@ -81,22 +81,20 @@ const DetalhesProprietarios = () => {
 
         {/* Seção de Endereço */}
         <div className="endereco">
-          <div>
-            <label>Rua:</label>
-            <input type="text" value={proprietario.endereco.rua} readOnly />
-          </div>
+
           <div>
             <label>Cidade:</label>
-            <input type="text" value={proprietario.endereco.cidade} readOnly />
+            <input type="text" value={proprietario.localizacao.cidade} readOnly />
+          </div>
+          <div>
+            <label>Pais:</label>
+            <input type="text" value={proprietario.localizacao.pais} readOnly />
           </div>
           <div>
             <label>Estado:</label>
-            <input type="text" value={proprietario.endereco.estado} readOnly />
+            <input type="text" value={proprietario.localizacao.estado} readOnly />
           </div>
-          <div>
-            <label>CEP:</label>
-            <input type="text" value={proprietario.endereco.cep} readOnly />
-          </div>
+
         </div>
       </div>
     </div>

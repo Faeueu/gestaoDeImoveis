@@ -1,5 +1,5 @@
 /* Estilo Geral */
-.visualizar-clientes {
+.visualizar-proprietarios {
     font-family: Arial, sans-serif;
     background-color: #fff;
     padding: 20px;
@@ -39,7 +39,7 @@
 }
 
 /* Estilo da Seção de Detalhes */
-.cliente-detalhes {
+.proprietarios-detalhes {
     display: flex;
     flex-direction: column;
     gap: 15px;

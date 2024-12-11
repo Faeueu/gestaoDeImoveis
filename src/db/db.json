@@ -1,0 +1,52 @@
+{
+  "clientes": [
+    {
+      "id": "dbf2",
+      "nome": "alex",
+      "email": "sa@gmail.com",
+      "dataNascimento": "2024-12-04",
+      "contato": "sss",
+      "endereco": {
+        "pais": "ss",
+        "estado": "s",
+        "cidade": ""
+      }
+    }
+  ],
+  "corretores": [
+    {
+      "id": "bfb2",
+      "nome": "Lamarl",
+      "creci": "123243",
+      "telefone": "089218921",
+      "pais": "baosaiop",
+      "estado": "aoksoap",
+      "cidade": "aksaolsa"
+    },
+    {
+      "id": "8f4b",
+      "nome": "Hebert",
+      "creci": "123456",
+      "telefone": "739380291",
+      "pais": "kajoskjaoia",
+      "estado": "pakoskodpsa",
+      "cidade": "kpoksoapkpso"
+    }
+  ],
+  "proprietarios": [
+    {
+      "id": "24a0",
+      "nome": "manel",
+      "telefone": "563546876",
+      "tipoImovel": "casas",
+      "descricaoImovel": "hdejhrej",
+      "localizacao": {
+        "pais": "aga",
+        "estado": "agag",
+        "cidade": "agag"
+      }
+    }
+  ],
+  "venda": [],
+  "aluguel": []
+}
