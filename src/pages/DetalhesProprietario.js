@@ -34,7 +34,7 @@ const DetalhesProprietarios = () => {
   }
 
   return (
-    <div className="visualizar-clientes">
+    <div className="visualizar-proprietarios">
       {/* Cabeçalho */}
       <header className="header">
         <button className="back-button" onClick={handleVoltar}>
@@ -44,7 +44,7 @@ const DetalhesProprietarios = () => {
       </header>
 
       {/* Seção de Detalhes */}
-      <div className="cliente-detalhes">
+      <div className="proprietarios-detalhes">
         <div className="dados">
           <label>Nome:</label>
           <input type="text" value={proprietario.nome} readOnly />
