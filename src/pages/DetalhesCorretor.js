@@ -25,6 +25,26 @@ const VisualizarCorretores = () => {
     setBusca(e.target.value);
   };
 
+  const handleDelete = async (id) => {
+    const confirmacao = window.confirm("Deseja realmente excluir este corretor?");
+    if (!confirmacao) return;
+
+    try {
+      const response = await fetch(`http://localhost:5000/corretores/${id}`, {
+        method: "DELETE",
+      });
+
+      if (response.ok) {
+        alert("Corretor excluído com sucesso!");
+        setCorretores(corretores.filter((corretor) => corretor.id !== id));
+      } else {
+        alert("Erro ao excluir corretor.");
+      }
+    } catch (error) {
+      alert("Erro ao excluir corretor.");
+    }
+  };
+
   const corretoresFiltrados = corretores.filter((corretor) =>
     corretor.nome.toLowerCase().includes(busca.toLowerCase())
   );
@@ -72,6 +92,12 @@ const VisualizarCorretores = () => {
                   {corretor.estado}
                 </p>
               </div>
+              <button
+                className="button-delete"
+                onClick={() => handleDelete(corretor.id)}
+              >
+                Excluir
+              </button>
             </div>
           ))
         ) : (
