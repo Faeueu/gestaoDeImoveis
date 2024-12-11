@@ -4,6 +4,6 @@
 
 #### Alunos: 
   - Lamark Ricarte
-  - Rafaeu Martins
+  - Rafael Martins
   - Hemanuel Hebert
   - Janderson Junior
