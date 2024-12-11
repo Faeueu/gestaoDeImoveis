@@ -5,5 +5,5 @@
 #### Alunos: 
   - Lamark Ricarte
   - Rafael Martins
-  - Hemanuel Hebert
+  - Emanuel Hebert
   - Janderson Junior
