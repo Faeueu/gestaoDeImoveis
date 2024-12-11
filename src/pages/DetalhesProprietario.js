@@ -10,7 +10,9 @@ const DetalhesProprietarios = () => {
   useEffect(() => {
     const fetchProprietario = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/proprietarios/${id}`);
+        const response = await fetch(
+          `http://localhost:5000/proprietarios/${id}`
+        );
         if (response.ok) {
           const data = await response.json();
           setProprietario(data);
@@ -34,7 +36,7 @@ const DetalhesProprietarios = () => {
   }
 
   return (
-    <div className="visualizar-clientes">
+    <div className="visualizar-proprietarios">
       {/* Cabeçalho */}
       <header className="header">
         <button className="back-button" onClick={handleVoltar}>
@@ -44,14 +46,10 @@ const DetalhesProprietarios = () => {
       </header>
 
       {/* Seção de Detalhes */}
-      <div className="cliente-detalhes">
+      <div className="proprietarios-detalhes">
         <div className="dados">
           <label>Nome:</label>
           <input type="text" value={proprietario.nome} readOnly />
-        </div>
-        <div className="dados">
-          <label>Email:</label>
-          <input type="text" value={proprietario.email} readOnly />
         </div>
         <div className="dados">
           <label>Telefone:</label>
@@ -64,7 +62,7 @@ const DetalhesProprietarios = () => {
         <div className="dados">
           <label>Descrição:</label>
           <textarea
-            value={proprietario.descricao}
+            value={proprietario.descricaoImovel}
             readOnly
             style={{
               width: "100%",
@@ -82,20 +80,25 @@ const DetalhesProprietarios = () => {
         {/* Seção de Endereço */}
         <div className="endereco">
           <div>
-            <label>Rua:</label>
-            <input type="text" value={proprietario.endereco.rua} readOnly />
+            <label>Pais:</label>
+            <input type="text" value={proprietario.localizacao.pais} readOnly />
           </div>
           <div>
             <label>Cidade:</label>
-            <input type="text" value={proprietario.endereco.cidade} readOnly />
-          </div>
-          <div>
-            <label>Estado:</label>
-            <input type="text" value={proprietario.endereco.estado} readOnly />
-          </div>
-          <div>
-            <label>CEP:</label>
-            <input type="text" value={proprietario.endereco.cep} readOnly />
+            <input
+              type="text"
+              value={proprietario.localizacao.cidade}
+              readOnly
+            />
+            <div>
+
+              <label>Estado:</label>
+              <input
+                type="text"
+                value={proprietario.localizacao.estado}
+                readOnly
+              />
+            </div>
           </div>
         </div>
       </div>

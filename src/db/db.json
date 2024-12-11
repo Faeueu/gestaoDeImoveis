@@ -35,15 +35,15 @@
   ],
   "proprietarios": [
     {
-      "id": "155e",
+      "id": "24a0",
       "nome": "manel",
-      "telefone": "86786876876",
-      "tipoImovel": "Barraco",
-      "descricaoImovel": "uma porta e sem janela",
+      "telefone": "563546876",
+      "tipoImovel": "casas",
+      "descricaoImovel": "hdejhrej",
       "localizacao": {
-        "pais": "Arabia",
-        "estado": "Islâmico ",
-        "cidade": "Meca"
+        "pais": "aga",
+        "estado": "agag",
+        "cidade": "agag"
       }
     }
   ],

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/VisualizarClientes.css";
+import "../styles/CadastroProprietario.css";
 
 const CadastroProprietario = () => {
   const [nome, setNome] = useState("");
