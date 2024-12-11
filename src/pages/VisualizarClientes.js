@@ -61,7 +61,7 @@ const VisualizarClientes = () => {
       </header>
 
       {/* Barra de Pesquisa */}
-      <div className="search-bar-visu">
+      <div className="search-bar">
         <input
           type="text"
           placeholder="Pesquisar pelo nome do cliente"

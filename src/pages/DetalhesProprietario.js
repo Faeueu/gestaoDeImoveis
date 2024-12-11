@@ -10,7 +10,9 @@ const DetalhesProprietarios = () => {
   useEffect(() => {
     const fetchProprietario = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/proprietarios/${id}`);
+        const response = await fetch(
+          `http://localhost:5000/proprietarios/${id}`
+        );
         if (response.ok) {
           const data = await response.json();
           setProprietario(data);
@@ -50,10 +52,6 @@ const DetalhesProprietarios = () => {
           <input type="text" value={proprietario.nome} readOnly />
         </div>
         <div className="dados">
-          <label>Email:</label>
-          <input type="text" value={proprietario.email} readOnly />
-        </div>
-        <div className="dados">
           <label>Telefone:</label>
           <input type="text" value={proprietario.telefone} readOnly />
         </div>
@@ -64,7 +62,7 @@ const DetalhesProprietarios = () => {
         <div className="dados">
           <label>Descrição:</label>
           <textarea
-            value={proprietario.descricao}
+            value={proprietario.descricaoImovel}
             readOnly
             style={{
               width: "100%",
@@ -87,11 +85,20 @@ const DetalhesProprietarios = () => {
           </div>
           <div>
             <label>Cidade:</label>
-            <input type="text" value={proprietario.localizacao.cidade} readOnly />
-          </div>
-          <div>
-            <label>Estado:</label>
-            <input type="text" value={proprietario.localizacao.estado} readOnly />
+            <input
+              type="text"
+              value={proprietario.localizacao.cidade}
+              readOnly
+            />
+            <div>
+
+              <label>Estado:</label>
+              <input
+                type="text"
+                value={proprietario.localizacao.estado}
+                readOnly
+              />
+            </div>
           </div>
         </div>
       </div>

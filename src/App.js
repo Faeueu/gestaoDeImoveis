@@ -38,7 +38,7 @@ const App = () => {
 
         <Route path="/visualizar-proprietarios" element={<VisualizarProprietarios />} />
         <Route path="/cadastro-proprietario" element={<CadastroProprietario />} />
-        <Route path="/proprietarios/:id" element={<DetalhesProprietario />} />
+        <Route path="/proprietario/:id" element={<DetalhesProprietario />} />
 
       </Routes>
     </Router>

@@ -63,21 +63,24 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
 }
 
 .corretor-card {
-  width: 80%;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corretor-info {
+  max-width: 70%;
+  cursor: pointer;
 }
 
 .corretor-info p {
   margin: 5px 0;
-  color: #555;
 }
 
 .no-data {
@@ -85,4 +88,20 @@ header h1 {
   color: #999;
   font-size: 18px;
   margin-top: 20px;
+}
+
+.button-delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-delete:hover {
+  background-color: #c0392b;
 }
