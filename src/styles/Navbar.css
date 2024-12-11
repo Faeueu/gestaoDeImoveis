@@ -27,7 +27,7 @@
 }
 
 .nav-links li {
-  font-size: 23px; /* Tamanho de fonte uniforme */
+  font-size: 20px; /* Tamanho de fonte uniforme */
   font-family: Arial, sans-serif; /* Fonte consistente */
   position: relative;
   padding: 5px 15px; /* Espaçamento uniforme */
@@ -40,7 +40,7 @@
 .nav-links a {
   text-decoration: none;
   color: #000;
-  font-size: 23px; /* Fonte alinhada com o dropdown */
+  font-size: 20px; /* Fonte alinhada com o dropdown */
   transition: color 0.3s ease;
 }
 
@@ -84,7 +84,7 @@
 
 .nav-links .dropdown-menu li {
   padding: 5px 15px; /* Espaçamento consistente */
-  font-size: 16px; /* Tamanho uniforme */
+  font-size: 20px; /* Tamanho uniforme */
   font-family: Arial, sans-serif;
   text-align: left; /* Alinha o texto à esquerda */
   transition: background-color 0.3s ease, transform 0.3s ease;

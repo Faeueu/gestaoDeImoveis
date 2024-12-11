@@ -1,0 +1,66 @@
+.visualizar-proprietarios {
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar-visu {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar-visu input {
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 30px 30px 30px 30px;
+    width: 500px;
+    outline: none;
+  }
+  
+  .clientes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cliente-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cliente-info {
+    max-width: 70%;
+    cursor: pointer;
+  }
+  
+  .cliente-info p {
+    margin: 5px 0;
+  }
+  
+  .btn-delete {
+    background-color: rgba(203, 1, 1, 0.896);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

@@ -1,5 +1,18 @@
-
 {
+  "clientes": [
+    {
+      "id": "dbf2",
+      "nome": "alex",
+      "email": "sa@gmail.com",
+      "dataNascimento": "2024-12-04",
+      "contato": "sss",
+      "endereco": {
+        "pais": "ss",
+        "estado": "s",
+        "cidade": ""
+      }
+    }
+  ],
   "corretores": [
     {
       "id": "bfb2",
@@ -19,5 +32,21 @@
       "estado": "pakoskodpsa",
       "cidade": "kpoksoapkpso"
     }
-  ]
+  ],
+  "proprietarios": [
+    {
+      "id": "155e",
+      "nome": "manel",
+      "telefone": "86786876876",
+      "tipoImovel": "Barraco",
+      "descricaoImovel": "uma porta e sem janela",
+      "localizacao": {
+        "pais": "Arabia",
+        "estado": "Islâmico ",
+        "cidade": "Meca"
+      }
+    }
+  ],
+  "venda": [],
+  "aluguel": []
 }
